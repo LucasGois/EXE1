@@ -1,12 +1,10 @@
 package com.lucas
 
-import android.content.DialogInterface
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -57,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         alert = if (type == 4 && num2 == 0.0) {
             alert.setMessage("Não é possível dividir por zero!")
         } else {
-            alert.setTitle("Resultado:").setMessage(result)
+            alert.setTitle("Resultado").setMessage(result)
         }
         alert.show()
     }
