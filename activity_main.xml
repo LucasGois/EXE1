@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_primeiro_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/et_primeiro_numero"
+        android:text="Digite o primeiro número:" />
+
+    <EditText
+        android:id="@+id/et_primeiro_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Primeiro número"
+        android:inputType="numberDecimal"
+        android:text="" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/tv_segundo_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/et_segundo_numero"
+        android:text="Digite o segundo número:" />
+
+    <EditText
+        android:id="@+id/et_segundo_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Segundo número"
+        android:inputType="numberDecimal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="64dp" />
+
+    <Button
+        android:id="@+id/btn_somar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Somar" />
+
+    <Button
+        android:id="@+id/btn_subtrair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subtrair" />
+
+    <Button
+        android:id="@+id/btn_multiplicar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplicar" />
+
+    <Button
+        android:id="@+id/btn_dividir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dividir" />
+
+</LinearLayout>
