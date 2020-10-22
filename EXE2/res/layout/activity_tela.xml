@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityTela">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp">
+
+        <TextView
+            style="@style/texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Racha Conta" />
+
+        <View style="@style/espacamento" />
+
+        <TextView
+            style="@style/texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consumo Total (R$)" />
+
+        <EditText
+            android:id="@+id/tf_consumo_total"
+            style="@style/texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <View style="@style/espacamento" />
+
+        <TextView
+            style="@style/texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Couvert por Pessoa (R$)" />
+
+        <EditText
+            android:id="@+id/tf_couvert_por_pessoa"
+            style="@style/texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <View style="@style/espacamento" />
+
+        <TextView
+            style="@style/texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Possui taxa de serviço?" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/rb_taxa_servico_sim"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sim" />
+
+            <RadioButton
+                android:id="@+id/rb_taxa_servico_nao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Não" />
+
+        </RadioGroup>
+
+        <View style="@style/espacamento" />
+
+        <TextView
+            style="@style/texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dividir em quantas pessoas?" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_dividir_pessoas_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/rb_dividir_pessoas_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/rb_dividir_pessoas_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/rb_dividir_pessoas_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5" />
+
+        </RadioGroup>
+
+        <View style="@style/espacamento" />
+
+        <Button
+            android:id="@+id/btn_dividir_conta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dividir Conta" />
+
+        <View style="@style/espacamento" />
+
+        <TextView
+            style="@style/texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Custo Total (R$):" />
+
+        <EditText
+            android:id="@+id/tf_custo_total"
+            style="@style/texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <View style="@style/espacamento" />
+
+        <TextView
+            style="@style/texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor por pessoa (R$):" />
+
+        <EditText
+            android:id="@+id/tf_valor_por_pessoa"
+            style="@style/texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+    </TableLayout>
+</ScrollView>
